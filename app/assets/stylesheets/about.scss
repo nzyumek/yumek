@@ -1,0 +1,46 @@
+// Place all the styles related to the about controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    min-height: 450px;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(makbanner.JPG); */
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    color: var(--text-bright-color);
+    text-align: center;
+}
+
+.contact {
+    padding-top: 80px;
+    padding-bottom: 160px;    
+    
+    .contact-form {
+        text-align: center;
+        width: 480px;
+        margin: 0 auto;
+        padding: 320px 0 160px 0;
+    }
+}
+
+.text-box {
+    width: 100%;
+}
+
+.introduction {
+        width: 480px;
+        margin: 0 auto;
+        padding: 320px 0 160px 0;
+}
+
+.profile {
+        // width: 480px;
+        // margin: 0 auto;
+        padding: 320px 0 160px 0;
+}

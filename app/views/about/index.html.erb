@@ -1,0 +1,59 @@
+<% provide(:title, "About") %>
+
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'about' %>
+<% end %>
+
+
+<section class="banner">
+    <%= image_tag 'web.png' %>
+</section>
+
+<section class="introduction">
+    <div class="container">
+        <h2>
+            GREETINGS
+        </h2>
+        <div class="text-box">
+            <p>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="profile">
+    <div class="container">
+        <h2>
+            <span>P</span>
+            <span>R</span>
+            <span>O</span>
+            <span>F</span>
+            <span>I</span>
+            <span>L</span>
+            <span>E</span>
+        </h2>
+        <div class="row">
+            <div class="col-md-4">
+                <%= image_tag "logo.png" %>
+            </div>        
+            <div class="col-md-8">
+                <div class="text-box">
+                    <p>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                        あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                        あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                        あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="contact" >
+    <%= render 'contact/index' %>
+</section>

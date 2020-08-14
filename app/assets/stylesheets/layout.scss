@@ -7,19 +7,21 @@ main {
   --grey: #3B403F;
   background-color: var(--main-color);
   color: var(--white);
+  min-height: calc(100vh - 60px);
 }
 
 html {
   height: 100%;
 }
 body {
-  min-height: 100%;
+  
   display: flex;
   flex-direction: column;
     a {
     color: #FFF;
   }
 }
+
 .content {
   flex: 1;
 }
