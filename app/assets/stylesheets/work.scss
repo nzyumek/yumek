@@ -1,0 +1,22 @@
+// Place all the styles related to the work controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.work-title {
+    text-align: right;
+    margin: 80px 0;
+}
+.work-box {
+    
+    text-align: right;
+
+    .work-square {
+        width: 270px;
+        height: 273.75px;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        border: solid 2px ;
+        display: inline-block;
+    }
+    
+}

@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   post 'contact/confirm' => 'contact#confirm'   # 確認画面
   post 'contact/thanks' => 'contact#thanks'     # 送信完了画面
   get 'about' => 'about#index'
-  get 'works' => 'works#index'
+  get 'works' => 'work#index'
 
 end

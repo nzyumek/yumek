@@ -144,3 +144,101 @@ ul {
         padding: 320px 0 160px 0;
     }
 }
+
+/* --- 全体のBOX定義 ---------------------------------------- */
+
+/* --- 背景の指定 ------------------------------------------- */
+.banner .bgImg {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    bottom     : 0;
+    right      : 0;
+    opacity    : 0;
+    animation  : bgAnime 3s infinite;   /* 4画像 × 各6s = 24s */
+}
+
+/* --- 段差で背景画像のアニメーションを実行 ----------------- */
+.banner .src1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), image-url('sakura_blank.png');   /* 背景の画像を指定 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 173px;
+}
+.banner .src2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), image-url('sakura_blank_1.png');   /* 背景の画像を指定 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 173px;
+    animation-delay  : 0.5s;
+}
+.banner .src3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), image-url('sakura_blank_2.png');   /* 背景の画像を指定 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 173px;
+    animation-delay  : 1s;
+}
+.banner .src4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), image-url('sakura_blank_3.png');   /* 背景の画像を指定 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 173px;
+    animation-delay  : 1.5s;
+}
+.banner .src5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), image-url('sakura_blank_4.png');   /* 背景の画像を指定 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 173px;
+    animation-delay  : 2s;
+}
+
+.banner .src6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), image-url('sakura_blank_5.png');   /* 背景の画像を指定 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 173px;
+    animation-delay  : 2.5s;
+}
+
+
+
+@keyframes bgAnime {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    25% { opacity: 1; }
+    35% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+// .banner .heading-title {
+//     padding-top: 180px;
+//     text-align: center;
+//     h2 {
+//         font-family: "Kenstein";
+//         color: #FFF;
+//         font-size: 2.4rem;;
+//     }
+// }
+
+.banner .heading-title {
+  position   : absolute;
+  display    : inline-block;
+  padding    : 20px;
+  color      : #fff;
+  top        : 50%;                               /* 中央寄せ */
+  left       : 50%;
+  transform  : translate(-50%,-50%);
+  z-index    : 11;
+}
+
+.banner h2 {
+    margin-top: 250px;
+    margin-bottom: 10px;
+    font-family: "Kenstein";
+    font-size: 3vw;
+    letter-spacing: 0.1em;
+    margin-left: 0.2em;
+}
+
