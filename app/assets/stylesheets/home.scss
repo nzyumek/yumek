@@ -1,0 +1,136 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.banner {
+    height: calc(100vh - 60px);
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+.more-buttom {
+    
+    width: 480px;
+    margin: 80px auto 0 auto;
+    
+    box-sizing: border-box;
+    display: block;
+    font-size: 1.2rem;
+    height: 80px;
+    line-height: 80px;
+    padding: 0px 20px;
+    text-align: center;
+    transition: all ease 0.2s;
+    
+    a {
+    text-decoration: none;
+    }
+    
+    .more-info-1 {
+        display: inline-block;
+        
+    }
+    
+    .buttom-animation:hover {
+        background-color: #414A4A;
+        color: #000000;
+        border: solid 2px #FFA554;
+        border-radius: 6px;
+        padding: 0 20px;
+            a {
+        text-decoration: none;
+        }
+        a:hover {
+            color: #FFF !important;
+        }
+    }
+}
+
+.skill {
+    height: 100vh;
+}
+
+.works {
+    height: 200vh;
+}
+
+
+.banner {
+    .image {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.about-class {
+    padding: 240px 0;
+    
+    .about {
+        padding: 30vh;
+    }
+}
+
+.about {
+    height: calc(100vh - 60px);
+    
+    .letter-box {
+        width: 100%;
+        height: 40%;
+        border: solid 2px;
+    }
+}
+
+
+
+.skill {
+    height: calc(100vh - 60px);
+    padding-bottom: 240px;
+
+}
+
+.box {
+        border-bottom: 2px solid #D95A32;
+        // background-color: #FCB5FF;
+        height: 10vh;
+        text-align: center;
+}
+
+// .single-work {
+//     border: solid 2px;
+//     margin: 5px;
+//     height: 16vh;
+//     width: 16vh;
+// }
+.works {
+    .works-area {
+        margin-top: 240px;
+        margin-bottom: 40px;
+    }
+    
+    .normal {
+        width: 270px;
+        height: 273.75px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        border: solid 2px ;
+        display: inline-block;
+    }
+    
+    .forth {
+        width: 270px;
+        height: 273.75px;
+        margin-right: 0;
+        margin-bottom: 40px;
+        border: solid 2px ;
+        display: inline-block;
+    }
+    
+    ul {
+        padding: 0 80px;
+    }
+}
+
+
