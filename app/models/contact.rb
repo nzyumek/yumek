@@ -1,6 +1,6 @@
 class Contact < ApplicationRecord
     include ActiveModel::Model
-    enum select: {a: 1, b: 2, c: 3, その他: 4}
+    enum select: {お仕事のご依頼: 1, お見積もりのご相談: 2, その他: 3}
 
 
   attr_accessor :name, :email, :message, :select

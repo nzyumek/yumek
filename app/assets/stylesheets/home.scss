@@ -12,10 +12,8 @@ ul {
 }
 
 .more-buttom {
-    
     width: 480px;
     margin: 80px auto 0 auto;
-    
     box-sizing: border-box;
     display: block;
     font-size: 1.2rem;
@@ -49,14 +47,9 @@ ul {
     }
 }
 
-.skill {
-    height: 100vh;
-}
 
-.works {
-    height: 200vh;
-}
 
+// banner
 
 .banner {
     .image {
@@ -65,30 +58,39 @@ ul {
     }
 }
 
+// about
+
 .about-class {
     padding: 240px 0;
     
     .about {
         padding: 30vh;
-    }
-}
-
-.about {
-    height: calc(100vh - 60px);
+        height: calc(100vh - 60px);
     
-    .letter-box {
-        width: 100%;
-        height: 40%;
-        border: solid 2px;
+        .letter-box {
+            width: 100%;
+            height: 80%;
+            // border: solid 2px;
+            // padding-left: 20px;
+            // padding-right: 20px;
+        }
+        
+        .more-buttom {
+            margin-top: 10px !important;
+        }
     }
 }
 
 
+// skill
 
 .skill {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 40px);
     padding-bottom: 240px;
 
+    .skill-text {
+        padding-top: 200px;
+    }
 }
 
 .box {
@@ -98,13 +100,12 @@ ul {
         text-align: center;
 }
 
-// .single-work {
-//     border: solid 2px;
-//     margin: 5px;
-//     height: 16vh;
-//     width: 16vh;
-// }
+
+//work
+
 .works {
+    height: 200vh;
+    
     .works-area {
         margin-top: 240px;
         margin-bottom: 40px;
@@ -115,8 +116,10 @@ ul {
         height: 273.75px;
         margin-right: 40px;
         margin-bottom: 40px;
-        border: solid 2px ;
+        border: solid 2px #FF6BD8;
         display: inline-block;
+        background-image: url('not_found_sakura.png');
+        background-size: cover;        
     }
     
     .forth {
@@ -124,8 +127,10 @@ ul {
         height: 273.75px;
         margin-right: 0;
         margin-bottom: 40px;
-        border: solid 2px ;
+        border: solid 2px #FF6BD8;
         display: inline-block;
+        background-image: url('not_found_sakura.png');
+        background-size: cover;           
     }
     
     ul {
@@ -134,14 +139,18 @@ ul {
 }
 
 
-.contact {
-    padding-bottom: 160px;    
-    
-    .contact-form {
-        text-align: center;
-        width: 480px;
-        margin: 0 auto;
-        padding: 320px 0 160px 0;
+// contact
+
+@media(min-width: 1080px) {
+    .contact {
+        padding-bottom: 160px;    
+        
+        .contact-form {
+            text-align: center;
+            width: 480px;
+            margin: 0 auto;
+            padding: 320px 0 160px 0;
+        }
     }
 }
 
@@ -236,9 +245,136 @@ ul {
 .banner h2 {
     margin-top: 250px;
     margin-bottom: 10px;
-    font-family: "Kenstein";
+    font-family: "Courier";
     font-size: 3vw;
     letter-spacing: 0.1em;
     margin-left: 0.2em;
 }
 
+
+.typing-box p {
+    display: inline-block;
+    vertical-align: top;
+}
+.typing {
+    overflow-y: hidden;
+      width: 5em;
+      height: 1.5em;
+        text-align: center;
+}
+
+.typing span{
+      position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+//   animation
+  animation: ShiftText 10s linear infinite;
+}
+
+@keyframes ShiftText{
+  0%{
+    opacity: 0;
+  }
+
+  1%,25%{
+    top: 0;
+    opacity: 1;
+  }
+
+  26%,50%{
+    top: -1.5em;
+  }
+
+  51%,75%{
+    top: -3em;
+  }
+
+  76%,100%{
+    top: -4.5em;
+  }
+}
+
+@media(max-width: 768px) {
+    .about-class {
+        .about {
+            padding: 10vh;
+            height: calc(100vh - 450px);
+        }
+    }
+    
+    .works {
+        height: 240vh;
+        .work-area {
+            margin-top: 80px;
+        }
+        .work-box {
+            text-align: left;
+            .normal {
+                width: calc(50% - 10px);
+                height: 287.75px;
+            }
+            .forth {
+                width: calc(50% - 10px);
+                height: 287.75px;
+            }
+            .first {
+                margin: 40px 10px 0 0;
+            }
+            .second {
+                margin: 40px 0 0 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 414px) {
+    .more-buttom {
+    width: 100vw;
+    margin: 20px auto 0 auto;
+    }
+    
+    .about-class {
+        padding-top: 40px;
+        .about {
+            height: 110vh;
+        }
+    }
+    
+    .skill {
+        height: 130vh;
+        .skill-text {
+            padding-top: 20px;
+        }
+    }
+    .works {
+        height: 240vh;
+        .works-area {
+            margin-top: 70px;
+        }
+        .work-box {
+            text-align: left;
+            margin: 40px auto;
+            padding: 0px;
+            width: 70%;
+            ul {
+                padding: 0;
+            }
+            
+            .normal {
+                width: calc(50% - 10px);
+                height: 137.65px;
+            }
+            .forth {
+                width: calc(50% - 10px);
+                height: 137.65px;
+            }
+            .first {
+                margin: 20px 5px 0 0;
+            }
+            .second {
+                margin: 20px 0 0 0;
+            }
+        }
+    }    
+}

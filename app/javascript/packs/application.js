@@ -9,6 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 require('packs/delighters')
 require("jquery")
+require('packs/jquery-sakura.min')
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -22,3 +23,4 @@ require("jquery")
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets  
+

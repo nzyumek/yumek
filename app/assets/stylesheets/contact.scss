@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .contact {
-    height: 150vh !important;
+    height: 150vh;
     padding-bottom: 0 !important;    
     
     .contact-form {
@@ -38,6 +38,7 @@
         margin-bottom: 40px;
         background-color: var(--grey);
         color: var(--white);
+        font-size: 1.6rem;
     }
     .message-box {
         width: 100% !important;
@@ -51,6 +52,7 @@
         height: 100px;
         padding-top: 20px;
         color: #FFF;
+        font-size: 1.6rem !important;
     
     }
     
@@ -62,4 +64,39 @@
         padding: 0 20px;
     }
 
+}
+
+.contactH2 {
+    text-align: center;
+        border-bottom: 2px solid #D95A32;
+        // background-color: #FCB5FF;
+        height: 10vh;    
+}
+
+@media(max-width: 768px) {
+    .contact {
+        height: 120vh;
+    }
+}
+
+@media(max-width: 414px) {
+    .contact {
+        height: 160vh;
+    }
+    
+    .contact .contact-form {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .select-size {
+        width: 100%;
+    }
+}
+
+@media(max-width: 375px) {
+    .contact {
+        height: 180vh;
+    }
 }
