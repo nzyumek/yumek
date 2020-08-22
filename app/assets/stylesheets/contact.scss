@@ -38,7 +38,7 @@
         font-size: 1.6rem !important;
     }
     .select-size {
-        width: 480px !important;
+        width: 480px;
         height: 64px !important;
         margin-bottom: 40px;
         background-color: var(--grey);
@@ -98,6 +98,7 @@
 }
 
 @media(max-width: 768px) {
+    
     .contact {
         height: 120vh;
     }
@@ -106,6 +107,7 @@
 @media(max-width: 414px) {
     .contact {
         height: 160vh;
+        padding-top: 0;
     }
     
     .contact .contact-form {
@@ -115,7 +117,11 @@
     }
     
     .select-size {
-        width: 100%;
+        width: 100% !important;
+    }
+    
+    .confirm-box {
+        padding-top: 60px;
     }
 }
 

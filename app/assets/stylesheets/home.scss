@@ -297,10 +297,15 @@ ul {
 
 @media(max-width: 768px) {
     .about-class {
+        padding-bottom: 150px;
         .about {
             padding: 10vh;
             height: calc(100vh - 450px);
         }
+    }
+    
+    .skill {
+        padding-bottom: 150px;
     }
     
     .works {
@@ -336,8 +341,9 @@ ul {
     
     .about-class {
         padding-top: 40px;
+        padding-bottom: 40px !important;
         .about {
-            height: 110vh;
+            height: 120vh;
         }
     }
     
@@ -348,7 +354,7 @@ ul {
         }
     }
     .works {
-        height: 240vh;
+        height: 190vh;
         .works-area {
             margin-top: 70px;
         }
@@ -377,4 +383,19 @@ ul {
             }
         }
     }    
+}
+
+@media(max-width: 375px) {
+    .about-class {
+        padding-bottom: 40px !important;
+        .about {
+            height: 135vh;
+        }
+    }    
+    .skill {
+        height: 150vh;
+    }
+    .works {
+        height: 190vh;
+    }
 }
