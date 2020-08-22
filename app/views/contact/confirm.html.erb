@@ -1,34 +1,43 @@
-<div class="page-header">
-  <h1>お問い合わせ</h1>
-</div>
- 
-<%= form_for @contact, :url => contact_thanks_path do |f| %>
-  <table class="table">
-    <tr>
-      <th>名前</th>
-        <td>
-          <%= f.hidden_field :select %>
-          <%= @contact.select %>
-        </td>
-      <td>
-        <%= f.hidden_field :name %>
-        <%= @contact.name %>
-      </td>
-    </tr>
-    <tr>
-      <th>メールアドレス</th>
-      <td>
-        <%= f.hidden_field :email %>
-        <%= @contact.email %>
-      </td>
-    </tr>
-    <tr>
-      <th>お問い合わせ内容</th>
-      <td>
-        <%= f.hidden_field :message %>
-        <%= simple_format(@contact.message) %>
-      </td>
-    </tr>
-  </table>
-  <%= f.submit '送信', :class => 'btn btn-primary' %>
+<% provide(:title, "contact") %>
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'contact' %>
 <% end %>
+
+<section class="confirm-box">
+  <div calss="container">
+    <div class="confirm">
+      <div class="page-header">
+        <h1>お問い合わせ</h1>
+      </div>
+       
+      <%= form_for @contact, :url => contact_thanks_path do |f| %>
+        <table class="table">
+          <tr>
+            <th>名前</th>
+            <td>
+              <%= f.hidden_field :name %>
+              <%= @contact.name %>
+            </td>
+          </tr>
+          <tr>
+            <th>メールアドレス</th>
+            <td>
+              <%= f.hidden_field :email %>
+              <%= @contact.email %>
+            </td>
+          </tr>
+          <tr>
+            <th>お問い合わせ内容</th>
+            <td>
+                <%= f.hidden_field :select %>
+                <%= @contact.select %>
+              <%= f.hidden_field :message %>
+              <%= simple_format(@contact.message) %>
+            </td>
+          </tr>
+        </table>
+        <%= f.submit '送信', :class => 'btn confirm submit-box-confirm buttom-animation' %>
+      <% end %>
+      </div>
+  </div>
+</section>

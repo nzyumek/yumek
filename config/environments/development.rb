@@ -61,5 +61,20 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   
   config.hosts << "094f566fa34c47d4986402940b686339.vfs.cloud9.us-west-2.amazonaws.com"
+  
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+   address:              'smtp.gmail.com',
+   port:                  587,
+   domain:               'gmail.com',
+   user_name:            'nzyume.k@gmail.com',
+   password:             'lbetsyxfrpijqsbb',
+   authentication:       'plain',
+   enable_starttls_auto:  true
+  }
+  
+  # mailer setting
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  
 end
 
