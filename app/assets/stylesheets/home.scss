@@ -104,7 +104,8 @@ ul {
 //work
 
 .works {
-    height: 200vh;
+    height: 100vh;
+    //height: 200vh; /* work with 3row 12ps */
     
     .works-area {
         margin-top: 240px;
@@ -129,7 +130,7 @@ ul {
         margin-bottom: 40px;
         border: solid 2px #FF6BD8;
         display: inline-block;
-        background-image: url('not_found_sakura.png');
+        background-image: image-url('not_found_sakura.png');
         background-size: cover;           
     }
     
