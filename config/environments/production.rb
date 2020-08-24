@@ -28,7 +28,6 @@ Rails.application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
-  config.assets.configure.export_concurrent = false
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
 
@@ -125,4 +124,8 @@ Rails.application.configure do
   
   # mailer setting
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }  
+end
+
+Rails.application.config.assets.configure do |env|
+  env.export_concurrent = false
 end
