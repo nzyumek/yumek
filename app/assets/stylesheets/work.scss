@@ -21,6 +21,16 @@
         background-size: cover;            
     }
     
+    .forth {
+        display: none;
+    }
+    
+}
+
+@media(max-width: 1024px) {
+    .forth {
+        display: inline-block !important;
+    }
 }
 
 // // sakura
